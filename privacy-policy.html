@@ -1,89 +1,140 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Locked — Gizlilik Politikası / Privacy Policy</title>
+<title>Locked Privacy Policy</title>
 <style>
-  body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; max-width: 720px;
+  body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; max-width: 720px;
          margin: 0 auto; padding: 32px 20px; line-height: 1.65; color: #1c2430; }
-  h1 { font-size: 26px; } h2 { font-size: 20px; margin-top: 40px; }
-  .big { font-size: 18px; font-weight: 600; background: #eef4ff; border-radius: 10px; padding: 14px 18px; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+  a { color: #3f6fe8; }
+  .big { font-size: 1.05rem; font-weight: 600; background: #eef4ff; border-radius: 10px; padding: 14px 18px; }
   hr { margin: 48px 0; border: none; border-top: 1px solid #dde3ea; }
   .muted { color: #5b6672; font-size: 14px; }
+  nav { margin-bottom: 24px; font-size: 14px; }
   @media (prefers-color-scheme: dark) {
-    body { background: #0d1117; color: #e6ecf3; }
-    .big { background: #1c2840; } hr { border-top-color: #2a3441; } .muted { color: #8b97a5; }
+    body { background: #0a0d14; color: #e9eef6; }
+    a { color: #8fb0ff; }
+    .big { background: #1a2232; } hr { border-top-color: #243044; } .muted { color: #8e9bb0; }
   }
 </style>
 </head>
 <body>
 
-<h1>Locked — Gizlilik Politikası</h1>
-<p class="muted">Son güncelleme: 3 Ağustos 2026</p>
+<nav><a href="#en">English</a> · <a href="#tr">Türkçe</a> · <a href="terms.html">Terms of Use / Kullanım Koşulları</a></nav>
 
-<p class="big">Locked hiçbir kişisel veri toplamaz, saklamaz, işlemez veya üçüncü
-taraflarla paylaşmaz. Tüm verileriniz yalnızca kendi cihazınızda tutulur.</p>
+<h1 id="en">Locked Privacy Policy</h1>
+<p class="muted">Last updated: October 21, 2026</p>
 
-<h2>Toplanan veriler</h2>
-<p>Hiçbiri. Locked'da kullanıcı hesabı yoktur, sunucumuz yoktur, analitik ve reklam
-SDK'sı yoktur. Şifreleriniz ve kayıtlarınız cihazınızda AES-256-GCM ile şifrelenmiş
-olarak saklanır; ana şifreniz cihazınızdan asla çıkmaz ve bizim dahil hiç kimse
-tarafından görülemez.</p>
+<p>Locked ("the app") is an offline password manager for Android and iOS published by FidovaSoft.</p>
 
-<h2>İnternet erişimi ne için var?</h2>
+<p class="big">FidovaSoft does not collect, store, receive or share any personal data. Locked has no user
+accounts, no servers of its own, no analytics, no advertising and no tracking. Your vault is kept on your device.</p>
+
+<h2>Your vault</h2>
+<p>Your entries are stored on your device, encrypted with AES-256-GCM using a key derived from your master
+password (PBKDF2-SHA256). Your master password is never sent anywhere and cannot be seen by anyone, including us.
+If you forget it, there is no way for us to recover your vault.</p>
+
+<h2>Biometric unlock (optional)</h2>
+<p>If you turn on biometric unlock, Locked asks your operating system to verify your face or fingerprint
+(Face ID, Touch ID or Android biometrics). Locked never receives or stores biometric data; it only learns whether the
+check succeeded. To make this possible, a key that opens your vault is kept in the app's private storage on your
+device and is used only after a successful check. You can turn this off at any time in Settings.</p>
+
+<h2>Autofill (Android only, optional)</h2>
+<p>If you select Locked as your autofill service in Android settings, Android lets Locked see the structure of login
+forms in other apps (for example, which field is a username or password field and the app's package name) so it can
+offer matching entries. This information is processed only on your device to find matching entries and is never
+stored or sent anywhere. When you choose to save a new login, it is added to your encrypted vault on the device.</p>
+
+<h2>Camera (Android only, optional)</h2>
+<p>The camera is used only when you choose to receive a vault from another device by scanning QR codes. Frames are
+processed on your device to read the codes; no images are saved or sent.</p>
+
+<h2>Clipboard</h2>
+<p>When you copy a username, password or code, it is placed on your device clipboard. By default Locked clears the
+clipboard after 30 seconds, or when you return to the app if the system did not allow clearing in the background.</p>
+
+<h2>Network access</h2>
 <ul>
-  <li><b>Google Play Faturalandırma:</b> Locked Pro satın alımı Google Play üzerinden
-      işlenir. Ödeme bilgileriniz Google tarafından yönetilir; bize ulaşmaz.</li>
-  <li><b>Site ikonları (isteğe bağlı, varsayılan KAPALI):</b> Ayarlardan açarsanız
-      kayıtlı sitelerin logoları DuckDuckGo ikon servisinden yüklenir. Bu özellik
-      kapalıyken uygulama hiçbir sunucuya bağlanmaz.</li>
-</ul>
-
-<h2>Yedekleme ve taşıma</h2>
-<p>Şifreli yedek dosyaları ve QR ile cihazdan cihaza taşıma tamamen sizin
-kontrolünüzdedir; veriler uçtan uca şifrelidir ve bizim erişimimiz olmaz.</p>
-
-<h2>Çocukların gizliliği</h2>
-<p>Locked veri toplamadığı için çocuklara ait veri de toplamaz.</p>
-
-<h2>Değişiklikler ve iletişim</h2>
-<p>Bu politika değişirse bu sayfada güncellenir.
-Sorularınız için: <b>fidovasoft@gmail.com</b></p>
-
-<hr>
-
-<h1>Locked — Privacy Policy</h1>
-<p class="muted">Last updated: August 3, 2026</p>
-
-<p class="big">Locked does not collect, store, process, or share any personal data.
-All of your data stays only on your own device.</p>
-
-<h2>Data we collect</h2>
-<p>None. Locked has no user accounts, no servers, no analytics and no ad SDKs.
-Your passwords and entries are stored on your device encrypted with AES-256-GCM;
-your master password never leaves your device and cannot be seen by anyone,
-including us.</p>
-
-<h2>Why does the app have internet access?</h2>
-<ul>
-  <li><b>Google Play Billing:</b> the Locked Pro purchase is processed by Google
-      Play. Your payment details are handled by Google and never reach us.</li>
-  <li><b>Website icons (optional, OFF by default):</b> if you enable it in
-      Settings, logos of saved sites are loaded from the DuckDuckGo icon service.
-      With this off, the app connects to no server at all.</li>
+  <li><strong>Purchases:</strong> the optional Locked Pro one-time purchase is processed by Google Play on Android and by
+    Apple on iOS. Payment details are handled by them and never reach us.</li>
+  <li><strong>Website icons (optional, off by default):</strong> if you enable it in Settings, the logos of saved
+    websites are loaded from the DuckDuckGo icon service. Only the website's domain name is requested. With this off,
+    Locked does not load any icons from the internet.</li>
 </ul>
 
 <h2>Backups and transfer</h2>
-<p>Encrypted backup files and QR device-to-device transfer are fully under your
-control; data is end-to-end encrypted and we have no access to it.</p>
+<p>Encrypted backup files you export and the QR device-to-device transfer are fully under your control. The vault inside
+them stays encrypted with your master password and we have no access to it. Locked does not control your operating
+system's device backups; depending on your settings, Android or iOS may include app data in backups stored in your own
+Google or Apple account.</p>
 
-<h2>Children's privacy</h2>
-<p>Since Locked collects no data, it collects no data from children either.</p>
+<h2>Children</h2>
+<p>Locked collects no data from anyone, including children.</p>
 
-<h2>Changes &amp; contact</h2>
-<p>If this policy changes, this page will be updated.
-Questions: <b>fidovasoft@gmail.com</b></p>
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be published at this address with a new date.
+Questions: <a href="mailto:fidovasoft@gmail.com">fidovasoft@gmail.com</a></p>
+
+<hr>
+
+<h1 id="tr">Locked Gizlilik Politikası</h1>
+<p class="muted">Son güncelleme: 21 Ekim 2026</p>
+
+<p>Locked ("uygulama"), FidovaSoft tarafından yayınlanan, Android ve iOS için çevrimdışı bir şifre yöneticisidir.</p>
+
+<p class="big">FidovaSoft hiçbir kişisel veriyi toplamaz, saklamaz, almaz veya paylaşmaz. Locked'da kullanıcı hesabı,
+kendi sunucumuz, analitik, reklam ve izleme yoktur. Kasanız cihazınızda tutulur.</p>
+
+<h2>Kasanız</h2>
+<p>Kayıtlarınız cihazınızda, ana şifrenizden türetilen bir anahtarla (PBKDF2-SHA256) AES-256-GCM ile şifrelenmiş olarak
+saklanır. Ana şifreniz hiçbir yere gönderilmez ve bizim dahil hiç kimse tarafından görülemez. Unutursanız kasanızı
+kurtarmamızın bir yolu yoktur.</p>
+
+<h2>Biyometrik kilit açma (isteğe bağlı)</h2>
+<p>Biyometrik kilit açmayı etkinleştirirseniz Locked, yüzünüzü veya parmak izinizi doğrulamasını işletim sisteminden
+ister (Face ID, Touch ID veya Android biyometrisi). Locked biyometrik veri almaz ve saklamaz; yalnızca doğrulamanın
+başarılı olup olmadığını öğrenir. Bunun için kasanızı açan bir anahtar cihazınızda uygulamanın özel deposunda tutulur
+ve yalnızca başarılı doğrulamadan sonra kullanılır. Bu özelliği Ayarlar'dan istediğiniz zaman kapatabilirsiniz.</p>
+
+<h2>Otomatik doldurma (yalnızca Android, isteğe bağlı)</h2>
+<p>Android ayarlarında Locked'ı otomatik doldurma hizmeti olarak seçerseniz Android, eşleşen kayıtları önerebilmesi için
+diğer uygulamalardaki giriş formlarının yapısını (hangi alanın kullanıcı adı veya şifre alanı olduğu ve uygulamanın paket
+adı gibi) Locked'a gösterir. Bu bilgi yalnızca cihazınızda eşleşen kayıtları bulmak için işlenir; hiçbir yerde saklanmaz
+veya gönderilmez. Yeni bir girişi kaydetmeyi seçerseniz cihazdaki şifreli kasanıza eklenir.</p>
+
+<h2>Kamera (yalnızca Android, isteğe bağlı)</h2>
+<p>Kamera yalnızca başka bir cihazdan QR kodlarıyla kasa almayı seçtiğinizde kullanılır. Görüntüler kodları okumak için
+cihazınızda işlenir; hiçbir görüntü kaydedilmez veya gönderilmez.</p>
+
+<h2>Pano</h2>
+<p>Bir kullanıcı adını, şifreyi veya kodu kopyaladığınızda cihazınızın panosuna yerleştirilir. Varsayılan olarak Locked
+panoyu 30 saniye sonra, sistem arka planda izin vermediyse uygulamaya döndüğünüzde temizler.</p>
+
+<h2>İnternet erişimi</h2>
+<ul>
+  <li><strong>Satın alma:</strong> isteğe bağlı tek seferlik Locked Pro satın alımı Android'de Google Play, iOS'ta Apple
+    tarafından işlenir. Ödeme bilgileriniz onlar tarafından yönetilir ve bize ulaşmaz.</li>
+  <li><strong>Site ikonları (isteğe bağlı, varsayılan kapalı):</strong> Ayarlar'dan açarsanız kayıtlı sitelerin logoları
+    DuckDuckGo ikon hizmetinden yüklenir. Yalnızca sitenin alan adı istenir. Bu kapalıyken Locked internetten ikon
+    yüklemez.</li>
+</ul>
+
+<h2>Yedekleme ve taşıma</h2>
+<p>Dışa aktardığınız şifreli yedek dosyaları ve QR ile cihazdan cihaza taşıma tamamen sizin kontrolünüzdedir. İçlerindeki
+kasa ana şifrenizle şifreli kalır ve bizim erişimimiz yoktur. Locked işletim sisteminizin cihaz yedeklerini kontrol etmez;
+ayarlarınıza bağlı olarak Android veya iOS uygulama verilerini kendi Google veya Apple hesabınızda saklanan yedeklere
+dahil edebilir.</p>
+
+<h2>Çocuklar</h2>
+<p>Locked çocuklar dahil hiç kimseden veri toplamaz.</p>
+
+<h2>Değişiklikler ve iletişim</h2>
+<p>Bu politika değişirse yeni sürüm yeni tarihle bu adreste yayınlanır.
+Sorularınız için: <a href="mailto:fidovasoft@gmail.com">fidovasoft@gmail.com</a></p>
 
 </body>
 </html>
