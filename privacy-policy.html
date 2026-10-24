@@ -25,7 +25,7 @@
 <nav><a href="#en">English</a> · <a href="#tr">Türkçe</a> · <a href="terms.html">Terms of Use / Kullanım Koşulları</a></nav>
 
 <h1 id="en">Locked Privacy Policy</h1>
-<p class="muted">Last updated: October 21, 2026</p>
+<p class="muted">Last updated: October 24, 2026</p>
 
 <p>Locked ("the app") is an offline password manager for Android and iOS published by FidovaSoft.</p>
 
@@ -40,8 +40,10 @@ If you forget it, there is no way for us to recover your vault.</p>
 <h2>Biometric unlock (optional)</h2>
 <p>If you turn on biometric unlock, Locked asks your operating system to verify your face or fingerprint
 (Face ID, Touch ID or Android biometrics). Locked never receives or stores biometric data; it only learns whether the
-check succeeded. To make this possible, a key that opens your vault is kept in the app's private storage on your
-device and is used only after a successful check. You can turn this off at any time in Settings.</p>
+check succeeded. To make this possible, a key that opens your vault is stored in your device's hardware-backed secure
+storage (the iOS Keychain or the Android Keystore), locked so that it can be read only after a successful biometric
+check. It never leaves your device and is not included in backups. If you add a new face or fingerprint, the stored key
+is invalidated and you unlock once with your master password. You can turn this off at any time in Settings.</p>
 
 <h2>Autofill (Android only, optional)</h2>
 <p>If you select Locked as your autofill service in Android settings, Android lets Locked see the structure of login
@@ -68,9 +70,10 @@ clipboard after 30 seconds, or when you return to the app if the system did not 
 
 <h2>Backups and transfer</h2>
 <p>Encrypted backup files you export and the QR device-to-device transfer are fully under your control. The vault inside
-them stays encrypted with your master password and we have no access to it. Locked does not control your operating
-system's device backups; depending on your settings, Android or iOS may include app data in backups stored in your own
-Google or Apple account.</p>
+them stays encrypted with your master password and we have no access to it. On Android, Locked opts out of the
+operating system's cloud backup and device-to-device transfer, so your vault moves only through the encrypted
+backup file or QR transfer you start yourself. On iOS, your device backup in your own Apple account may include the
+vault file, which stays encrypted with your master password; the biometric key is never included.</p>
 
 <h2>Children</h2>
 <p>Locked collects no data from anyone, including children.</p>
@@ -82,7 +85,7 @@ Questions: <a href="mailto:fidovasoft@gmail.com">fidovasoft@gmail.com</a></p>
 <hr>
 
 <h1 id="tr">Locked Gizlilik Politikası</h1>
-<p class="muted">Son güncelleme: 21 Ekim 2026</p>
+<p class="muted">Son güncelleme: 24 Ekim 2026</p>
 
 <p>Locked ("uygulama"), FidovaSoft tarafından yayınlanan, Android ve iOS için çevrimdışı bir şifre yöneticisidir.</p>
 
@@ -97,8 +100,11 @@ kurtarmamızın bir yolu yoktur.</p>
 <h2>Biyometrik kilit açma (isteğe bağlı)</h2>
 <p>Biyometrik kilit açmayı etkinleştirirseniz Locked, yüzünüzü veya parmak izinizi doğrulamasını işletim sisteminden
 ister (Face ID, Touch ID veya Android biyometrisi). Locked biyometrik veri almaz ve saklamaz; yalnızca doğrulamanın
-başarılı olup olmadığını öğrenir. Bunun için kasanızı açan bir anahtar cihazınızda uygulamanın özel deposunda tutulur
-ve yalnızca başarılı doğrulamadan sonra kullanılır. Bu özelliği Ayarlar'dan istediğiniz zaman kapatabilirsiniz.</p>
+başarılı olup olmadığını öğrenir. Bunun için kasanızı açan bir anahtar, cihazınızın donanım destekli güvenli deposunda
+(iOS Anahtar Zinciri veya Android Keystore) yalnızca başarılı bir biyometrik doğrulamadan sonra okunabilecek şekilde
+saklanır. Bu anahtar cihazınızdan çıkmaz ve yedeklere dahil edilmez. Yeni bir yüz veya parmak izi eklerseniz saklanan
+anahtar geçersiz olur ve kasanızı bir kez ana şifrenizle açarsınız. Bu özelliği Ayarlar'dan istediğiniz zaman
+kapatabilirsiniz.</p>
 
 <h2>Otomatik doldurma (yalnızca Android, isteğe bağlı)</h2>
 <p>Android ayarlarında Locked'ı otomatik doldurma hizmeti olarak seçerseniz Android, eşleşen kayıtları önerebilmesi için
@@ -125,9 +131,10 @@ panoyu 30 saniye sonra, sistem arka planda izin vermediyse uygulamaya döndüğ�
 
 <h2>Yedekleme ve taşıma</h2>
 <p>Dışa aktardığınız şifreli yedek dosyaları ve QR ile cihazdan cihaza taşıma tamamen sizin kontrolünüzdedir. İçlerindeki
-kasa ana şifrenizle şifreli kalır ve bizim erişimimiz yoktur. Locked işletim sisteminizin cihaz yedeklerini kontrol etmez;
-ayarlarınıza bağlı olarak Android veya iOS uygulama verilerini kendi Google veya Apple hesabınızda saklanan yedeklere
-dahil edebilir.</p>
+kasa ana şifrenizle şifreli kalır ve bizim erişimimiz yoktur. Android'de Locked, işletim sisteminin bulut yedeğine ve
+cihazdan cihaza aktarımına kapalıdır; kasanız yalnızca sizin başlattığınız şifreli yedek dosyası veya QR taşıma ile
+başka bir yere gider. iOS'ta kendi Apple hesabınızdaki cihaz yedeği kasa dosyasını içerebilir; bu dosya ana şifrenizle
+şifreli kalır, biyometri anahtarı ise hiçbir zaman yedeğe girmez.</p>
 
 <h2>Çocuklar</h2>
 <p>Locked çocuklar dahil hiç kimseden veri toplamaz.</p>
